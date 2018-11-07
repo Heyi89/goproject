@@ -2,9 +2,11 @@ package links
 
 import (
 	"fmt"
-	"net/http"
 	"golang.org/x/net/html"
+	"net/http"
 )
+
+/*analise the web pages, looking for href a*/
 
 func Extract(url string) ([]string, error){
 	resp, err := http.Get(url)
